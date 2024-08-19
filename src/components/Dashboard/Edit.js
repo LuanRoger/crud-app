@@ -58,6 +58,7 @@ const Edit = ({ employees, selectedEmployee, setEmployees, setIsEditing }) => {
         <label htmlFor="firstName">First Name</label>
         <input
           id="firstName"
+          data-testid="firstName"
           type="text"
           name="firstName"
           value={firstName}
@@ -96,7 +97,7 @@ const Edit = ({ employees, selectedEmployee, setEmployees, setIsEditing }) => {
           onChange={e => setDate(e.target.value)}
         />
         <div style={{ marginTop: '30px' }}>
-          <input type="submit" value="Update" />
+          <input type="submit" value="Update" data-testid="update-submit" />
           <input
             style={{ marginLeft: '12px' }}
             className="muted-button"

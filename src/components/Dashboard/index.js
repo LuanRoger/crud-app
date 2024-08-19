@@ -6,9 +6,7 @@ import Table from './Table';
 import Add from './Add';
 import Edit from './Edit';
 
-import { employeesData } from '../../data';
-
-const Dashboard = ({ setIsAuthenticated }) => {
+const Dashboard = ({ setIsAuthenticated, employeesData }) => {
   const [employees, setEmployees] = useState(employeesData);
   const [selectedEmployee, setSelectedEmployee] = useState(null);
   const [isAdding, setIsAdding] = useState(false);
